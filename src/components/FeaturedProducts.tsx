@@ -10,7 +10,7 @@ const products = [
     name: "Serene Mist Kit",
     description: "An elegant pepper spray disguised as a luxury perfume atomizer, featuring a lavender casing.",
     price: 45.99,
-    image: "https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=800&h=600&fit=crop",
+    image: "/lovable-uploads/33e5ed6f-f145-4c8f-9421-6ed7a04a58a9.png",
     category: "Personal Protection",
     isNew: true,
     isPremium: true,
