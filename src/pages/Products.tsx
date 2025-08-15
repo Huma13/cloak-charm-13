@@ -2,9 +2,10 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Search, Filter } from "lucide-react";
+import { Search, Filter, ArrowLeft, Clock } from "lucide-react";
 import ProductCard from "@/components/ProductCard";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const allProducts = [
   {
@@ -77,10 +78,67 @@ const allProducts = [
     image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
     category: "Everyday Carry",
     isPremium: true,
+  },
+  {
+    id: "9",
+    name: "Blossom Shield Charm",
+    description: "A delicate flower-shaped charm that conceals a 120dB alarm with emergency LED strobe light.",
+    price: 179,
+    image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&h=600&fit=crop",
+    category: "Wearable Protection",
+  },
+  {
+    id: "10",
+    name: "Midnight Whisper Kit",
+    description: "A sleek black lipstick case containing pepper gel with precision spray nozzle.",
+    price: 429,
+    image: "https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=800&h=600&fit=crop",
+    category: "Personal Protection",
+    isPremium: true,
+  },
+  {
+    id: "11",
+    name: "Starlight Escape Tool",
+    description: "A beautiful star-shaped car accessory with hidden glass breaker and seatbelt cutter.",
+    price: 329,
+    image: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=800&h=600&fit=crop",
+    category: "Everyday Carry",
+  },
+  {
+    id: "12",
+    name: "Garden Guardian Watch",
+    description: "An elegant smartwatch with integrated panic button and GPS tracking in floral design.",
+    price: 1299,
+    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&h=600&fit=crop",
+    category: "Wearable Protection",
+    isPremium: true,
+    isNew: true,
+  }
+];
+
+const comingSoonProducts = [
+  {
+    name: "Pearl Essence Shield",
+    description: "Luxury pearl necklace with built-in emergency beacon",
+    category: "Wearable Protection",
+    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&h=600&fit=crop",
+  },
+  {
+    name: "Diamond Dust Defender",
+    description: "Crystalline compact with advanced protection features",
+    category: "Personal Protection", 
+    image: "https://images.unsplash.com/photo-1583292650898-7d22cd27ca6f?w=800&h=600&fit=crop",
+  },
+  {
+    name: "Silk Touch Guardian",
+    description: "Ultra-soft scarf with integrated safety alerts",
+    category: "Wearable Protection",
+    image: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=800&h=600&fit=crop",
   }
 ];
 
 const Products = () => {
+  const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [sortBy, setSortBy] = useState("name");
@@ -110,6 +168,18 @@ const Products = () => {
   return (
     <div className="min-h-screen py-8">
       <div className="container mx-auto px-4">
+        {/* Back Button */}
+        <div className="mb-6">
+          <Button 
+            variant="ghost" 
+            onClick={() => navigate('/')}
+            className="flex items-center gap-2 text-gray-600 hover:text-gray-800"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            Back to Home
+          </Button>
+        </div>
+
         {/* Header */}
         <div className="text-center mb-12">
           <Badge variant="outline" className="mb-4 border-pastelblue-400 text-pastelblue-700 px-4 py-1">
@@ -190,6 +260,57 @@ const Products = () => {
             </Button>
           </div>
         )}
+
+        {/* Coming Soon Section */}
+        <div className="mt-16">
+          <div className="text-center mb-8">
+            <Badge variant="outline" className="mb-4 border-pastelpink-400 text-pastelpink-700 px-4 py-1">
+              Coming Soon
+            </Badge>
+            <h2 className="font-serif text-2xl md:text-3xl font-bold mb-4 bg-gradient-to-r from-pastelpink-600 to-lavender-600 bg-clip-text text-transparent">
+              New Arrivals in Development
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Exciting new protection products currently being crafted by our design team.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {comingSoonProducts.map((product, index) => (
+              <div 
+                key={product.name} 
+                className="relative group animate-fade-in" 
+                style={{ animationDelay: `${index * 150}ms` }}
+              >
+                <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-all duration-300">
+                  <div className="relative">
+                    <img 
+                      src={product.image} 
+                      alt={product.name}
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
+                      <div className="bg-white/90 backdrop-blur-sm rounded-full p-3">
+                        <Clock className="h-6 w-6 text-pastelpink-600" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-4">
+                    <h3 className="font-medium text-lg mb-2">{product.name}</h3>
+                    <p className="text-gray-600 text-sm mb-3">{product.description}</p>
+                    <Badge variant="outline" className="text-xs">
+                      {product.category}
+                    </Badge>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <div className="text-center mt-8">
+            <p className="text-gray-500 italic">Stay tuned for these beautiful additions to our collection!</p>
+          </div>
+        </div>
       </div>
     </div>
   );
