@@ -20,7 +20,7 @@ const products = [
     name: "Echo Alarm Pendant",
     description: "A beautiful stone pendant necklace that conceals a 130dB personal alarm triggered by a discreet button.",
     price: 39.99,
-    image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=800&h=600&fit=crop",
+    image: "/lovable-uploads/113d1726-c956-4e54-9875-7e4a2c2f2339.png",
     category: "Wearable Protection",
     isBestseller: true,
   },
