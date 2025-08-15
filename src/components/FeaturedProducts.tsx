@@ -2,6 +2,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import ProductCard from "./ProductCard";
 
 const products = [
@@ -44,6 +45,8 @@ const products = [
 ];
 
 const FeaturedProducts = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="collections" className="py-16 md:py-24 pastel-gradient-green bg-opacity-30">
       <div className="container mx-auto px-4">
@@ -68,7 +71,11 @@ const FeaturedProducts = () => {
         </div>
         
         <div className="mt-12 text-center animate-fade-in" style={{ animationDelay: "600ms" }}>
-          <Button variant="outline" className="border-pastelblue-300 text-pastelblue-700 hover:bg-pastelblue-50 button-pop">
+          <Button 
+            variant="outline" 
+            className="border-pastelblue-300 text-pastelblue-700 hover:bg-pastelblue-50 button-pop"
+            onClick={() => navigate('/products')}
+          >
             View All Products <ArrowRight className="ml-2 h-4 w-4 animate-bounce-subtle" />
           </Button>
         </div>

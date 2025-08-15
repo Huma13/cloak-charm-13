@@ -2,10 +2,15 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Dialog, DialogTrigger } from "@/components/ui/dialog";
 import { ArrowRight, Sparkles } from "lucide-react";
+import { useState } from "react";
 import CustomizationPanel from "./CustomizationPanel";
+import { PricingDialog } from "./PricingDialog";
 
 const PremiumFeatures = () => {
+  const [isPricingOpen, setIsPricingOpen] = useState(false);
+
   return (
     <section id="premium-features" className="py-16 md:py-24 bg-gradient-to-r from-lavender-50 to-softpink-50">
       <div className="container mx-auto px-4">
@@ -34,10 +39,15 @@ const PremiumFeatures = () => {
               <p className="text-gray-600 mb-6">
                 Our premium subscription unlocks a world of personalization options. From custom colors to engraved messages, create protection that reflects your personality.
               </p>
-              <Button className="bg-gradient-to-r from-lavender-400 to-softpink-400 hover:from-lavender-500 hover:to-softpink-500 text-white flex items-center gap-2">
-                <Sparkles size={16} className="animate-spin-slow" />
-                <span>Unlock Premium Features</span>
-              </Button>
+              <Dialog open={isPricingOpen} onOpenChange={setIsPricingOpen}>
+                <DialogTrigger asChild>
+                  <Button className="bg-gradient-to-r from-lavender-400 to-softpink-400 hover:from-lavender-500 hover:to-softpink-500 text-white flex items-center gap-2">
+                    <Sparkles size={16} className="animate-spin-slow" />
+                    <span>Unlock Premium Features</span>
+                  </Button>
+                </DialogTrigger>
+                <PricingDialog />
+              </Dialog>
             </div>
           
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -116,7 +126,11 @@ const PremiumFeatures = () => {
               <Button variant="outline" className="border-lavender-300 text-lavender-700 hover:bg-lavender-50">
                 Learn More
               </Button>
-              <Button variant="link" className="text-softpink-600 flex items-center gap-1 hover:text-softpink-800">
+              <Button 
+                variant="link" 
+                className="text-softpink-600 flex items-center gap-1 hover:text-softpink-800"
+                onClick={() => setIsPricingOpen(true)}
+              >
                 See Pricing Details <ArrowRight size={16} />
               </Button>
             </div>
