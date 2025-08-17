@@ -30,7 +30,7 @@ const products = [
     name: "Dusk Guardian Kit",
     description: "A concept self-defense kit integrating a kubaton keychain, alarm pendant, pepper spray, and flashlight into a cohesive design that balances functionality with aesthetics.",
     price: 679,
-    image: "https://sdmntprcentralus.oaiusercontent.com/files/00000000-437c-61f5-8c14-8daa1e921788/raw?se=2025-08-17T06%3A25%3A10Z&sp=r&sv=2024-08-04&sr=b&scid=9f3d62bf-60ff-527b-b7e6-faa577b35a67&skoid=add8ee7d-5fc7-451e-b06e-a82b2276cf62&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-17T05%3A23%3A22Z&ske=2025-08-18T05%3A23%3A22Z&sks=b&skv=2024-08-04&sig=NNce1Lg8H5Z/sbgI1jBhmGK3QWpwDFQist9nptcB66c%3D",
+    image: "https://sdmntprcentralus.oaiusercontent.com/files/00000000-437c-61f5-8c14-8daa1e921788/raw?se=2025-08-17T07%3A49%3A09Z&sp=r&sv=2024-08-04&sr=b&scid=7ab6d095-c5e6-5db9-ba80-948230465a3a&skoid=e9d2f8b1-028a-4cff-8eb1-d0e66fbefcca&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-16T23%3A29%3A57Z&ske=2025-08-17T23%3A29%3A57Z&sks=b&skv=2024-08-04&sig=is3ibYDBE9BezFD9wRusMML/pXFfaCzlF4hn6P%2BwdXM%3D",
     category: "Personal Protection",
     isPremium: true,
   },
@@ -39,7 +39,7 @@ const products = [
     name: "Rose Petal Alarm",
     description: "A fashionable rose-shaped pendant with hidden panic button that sends GPS alerts to your emergency contacts.",
     price: 149,
-    image: "https://sdmntprcentralus.oaiusercontent.com/files/00000000-f310-61f5-8ac0-9467f67ec7af/raw?se=2025-08-17T06%3A31%3A43Z&sp=r&sv=2024-08-04&sr=b&scid=a2819045-2614-59ab-810b-c165c9426ade&skoid=add8ee7d-5fc7-451e-b06e-a82b2276cf62&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-16T21%3A30%3A59Z&ske=2025-08-17T21%3A30%3A59Z&sks=b&skv=2024-08-04&sig=3QZo0iE%2BOY6psAEk%2BSKjgiKzjRJCOdc2e29m%2BnHBywo%3D",
+    image: "https://sdmntprcentralus.oaiusercontent.com/files/00000000-f310-61f5-8ac0-9467f67ec7af/raw?se=2025-08-17T07%3A49%3A09Z&sp=r&sv=2024-08-04&sr=b&scid=826eeaac-9476-5735-9de0-a4cec0a0f018&skoid=e9d2f8b1-028a-4cff-8eb1-d0e66fbefcca&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-17T06%3A20%3A45Z&ske=2025-08-18T06%3A20%3A45Z&sks=b&skv=2024-08-04&sig=Xl8Ghd7BwfcSlVsB6ygsTlLquSicB3gu36/wBmtGp9g%3D,
     category: "Wearable Protection",
   }
 ];
