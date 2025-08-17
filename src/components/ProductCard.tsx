@@ -123,7 +123,7 @@ const ProductCard = ({
             <p className={`text-sm text-${categoryColor}-700 mb-1`}>{category}</p>
             <h3 className="font-medium text-lg">{name}</h3>
           </div>
-          <p className="font-semibold">${price.toFixed(2)}</p>
+          <p className="font-semibold">₹{price}</p>
         </div>
       </CardHeader>
       <CardContent className="py-0">
