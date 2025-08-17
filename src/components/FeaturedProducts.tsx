@@ -12,7 +12,7 @@ const products = [
     description: "An elegant pepper spray disguised as a luxury perfume atomizer, featuring a lavender casing.",
     price: 549,
     image: "/lovable-uploads/33e5ed6f-f145-4c8f-9421-6ed7a04a58a9.png",
-    category: "Personal Protection",
+    category: "Everyday Carry",
     isNew: true,
     isPremium: true,
   },
@@ -31,7 +31,7 @@ const products = [
     description: "A concept self-defense kit integrating a kubaton keychain, alarm pendant, pepper spray, and flashlight into a cohesive design that balances functionality with aesthetics.",
     price: 679,
     image: "https://sdmntprcentralus.oaiusercontent.com/files/00000000-437c-61f5-8c14-8daa1e921788/raw?se=2025-08-17T06%3A25%3A10Z&sp=r&sv=2024-08-04&sr=b&scid=9f3d62bf-60ff-527b-b7e6-faa577b35a67&skoid=add8ee7d-5fc7-451e-b06e-a82b2276cf62&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-17T05%3A23%3A22Z&ske=2025-08-18T05%3A23%3A22Z&sks=b&skv=2024-08-04&sig=NNce1Lg8H5Z/sbgI1jBhmGK3QWpwDFQist9nptcB66c%3D",
-    category: "Everyday Carry",
+    category: "Personal Protection",
     isPremium: true,
   },
   {
