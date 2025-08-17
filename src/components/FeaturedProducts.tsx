@@ -39,7 +39,7 @@ const products = [
     name: "Rose Petal Alarm",
     description: "A fashionable rose-shaped pendant with hidden panic button that sends GPS alerts to your emergency contacts.",
     price: 149,
-    image: "/src/assets/rose-alarm-pendant.webp",
+    image: "https://sdmntprcentralus.oaiusercontent.com/files/00000000-f310-61f5-8ac0-9467f67ec7af/raw?se=2025-08-17T06%3A31%3A43Z&sp=r&sv=2024-08-04&sr=b&scid=a2819045-2614-59ab-810b-c165c9426ade&skoid=add8ee7d-5fc7-451e-b06e-a82b2276cf62&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-16T21%3A30%3A59Z&ske=2025-08-17T21%3A30%3A59Z&sks=b&skv=2024-08-04&sig=3QZo0iE%2BOY6psAEk%2BSKjgiKzjRJCOdc2e29m%2BnHBywo%3D",
     category: "Wearable Protection",
   }
 ];
