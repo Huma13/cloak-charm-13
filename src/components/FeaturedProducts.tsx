@@ -37,9 +37,9 @@ const products = [
   {
     id: "4",
     name: "Rose Petal Alarm",
-    description: "A fashionable bracelet with hidden panic button that sends GPS alerts to your emergency contacts.",
+    description: "A fashionable rose-shaped pendant with hidden panic button that sends GPS alerts to your emergency contacts.",
     price: 149,
-    image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&h=600&fit=crop",
+    image: "/src/assets/rose-alarm-pendant.webp",
     category: "Wearable Protection",
   }
 ];
