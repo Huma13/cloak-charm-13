@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/27c8c20d-2621-4b7a-8cbf-cc78bba8ce29
+**URL**: https://preview--cloak-charm-13.lovable.app/
 
 ## How can I edit this code?
 
