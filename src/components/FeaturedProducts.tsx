@@ -30,7 +30,7 @@ const products = [
     name: "Dusk Guardian Kit",
     description: "A sleek keychain with integrated kubaton and LED flashlight in anodized aluminum with soft touch coating.",
     price: 549,
-    image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=800&h=600&fit=crop",
+    image: "https://sdmntprcentralus.oaiusercontent.com/files/00000000-437c-61f5-8c14-8daa1e921788/raw?se=2025-08-17T06%3A25%3A10Z&sp=r&sv=2024-08-04&sr=b&scid=9f3d62bf-60ff-527b-b7e6-faa577b35a67&skoid=add8ee7d-5fc7-451e-b06e-a82b2276cf62&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-17T05%3A23%3A22Z&ske=2025-08-18T05%3A23%3A22Z&sks=b&skv=2024-08-04&sig=NNce1Lg8H5Z/sbgI1jBhmGK3QWpwDFQist9nptcB66c%3D",
     category: "Everyday Carry",
     isPremium: true,
   },
